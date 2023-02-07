@@ -39,14 +39,13 @@ void PrintMatrixArray(int[,] matrix)
 }
 
 int[,] matrixArray = CreatMatrixArray(3, 4, 1, 100);
-PrintMatrixArray(matrixArray);
 
 Console.WriteLine("Введите индексы элементвов: ");
 Console.WriteLine("Index Pos1: ");
 int posRows = Convert.ToInt32(Console.ReadLine());
-
 Console.WriteLine("Index Pos2: ");
 int posColums = Convert.ToInt32(Console.ReadLine());
+// PrintMatrixArray(matrixArray);
 if(posRows < 0 || posColums < 0)
 {
   Console.Write("Введите положительное значение");
@@ -57,4 +56,5 @@ if(posRows > matrixArray.GetLength(0) && posColums > matrixArray.GetLength(1))
     Console.Write("элементов под такими индексами не существует");
   return;
 }
+PrintMatrixArray(matrixArray);
 Console.Write($"Элемент индексов {posRows} и {posColums} найден, и имеет следующее значение: {matrixArray[posRows,posColums]}");
