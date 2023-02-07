@@ -45,7 +45,6 @@ Console.WriteLine("Index Pos1: ");
 int posRows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Index Pos2: ");
 int posColums = Convert.ToInt32(Console.ReadLine());
-// PrintMatrixArray(matrixArray);
 if(posRows < 0 || posColums < 0)
 {
   Console.Write("Введите положительное значение");
