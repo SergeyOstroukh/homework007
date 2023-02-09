@@ -67,7 +67,7 @@ double[] AverageNumber(int[,] matrix)
     }
     return sumArray;
 }
-int[,] creatMatrix = CreatMatrixArray(3, 4, 1, 100);
+int[,] creatMatrix = CreatMatrixArray(4, 4, 1, 100);
 PrintMatrixArray(creatMatrix);
 double[] averageNumber = AverageNumber(creatMatrix);
 Console.WriteLine();
